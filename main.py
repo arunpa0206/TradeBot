@@ -1,12 +1,13 @@
-import extractHistoricalAndMACDdata
-import candelAndMACDGraph
+import extract_data
+import candel_macd
+
 
 #NOTE :
 #(1)-PLEASE ADD .CSV AT THE END OF FILENAMES WHICH ARE BEING PASSED AS A PARAMETER.
 
 
 
-extractHistoricalAndMACDdata.historicalCandelstickData('DOGEUSDT' , '15m' , 1501525800000, 1627965999000 , 'doge_by15min_his_full.csv')
+extract_data.historicalCandelstickData('DOGEUSDT' , '15m' , 1501525800000, 1627965999000 , 'doge_by15min_his_full.csv')
 #currently coded for dogecoin- from its starting date to 3rd aug 2021 , at 10:16:39 AM.
 #timestamp for 5 July 2019 12:00:00 = 1501525800000(opening of doge-coin)
 #timestamp for 3 August 2021 10:16:39 = 1627965999000
@@ -14,13 +15,13 @@ extractHistoricalAndMACDdata.historicalCandelstickData('DOGEUSDT' , '15m' , 1501
 
 
 
-extractHistoricalAndMACDdata.historical_To_MACD('doge_by15min_his_full.csv' , 'dogeusdtbymin15_MACD.csv')
+extract_data.historical_To_MACD('doge_by15min_his_full.csv' , 'dogeusdtbymin15_MACD.csv')
 #(3)- CONVERT A HISTORICAL DATA CSV FILE TO MACD DATA CSV FILE FOR A GIVEN COIN.
 
 
 
 
-candelAndMACDGraph.candelStickChart('dogeusdtbymin15_MACD.csv' , 'dogeusdtbymin15_Candel_Graph.html')
-candelAndMACDGraph.graphMACDSignal('dogeusdtbymin15_MACD.csv' , 'dogeusdtbymin15_MACD_Graph.png')
+candel_macd.candelStickChart('dogeusdtbymin15_MACD.csv' , 'dogeusdtbymin15_Candel_Graph.html')
+candel_macd.graphMACDSignal('dogeusdtbymin15_MACD.csv' , 'dogeusdtbymin15_MACD_Graph.png')
 #(4)- PLOTTING CANDELSTICK AND MACD GRAPH(NOT LIVE GRAPH, HISTORICAL DATA GRAPH ONLY)
 
