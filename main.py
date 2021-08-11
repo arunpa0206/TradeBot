@@ -23,10 +23,10 @@ import liveevents
 
 
 
-candel_macd.candelStickChart('DOGEUSDTMACD5m.csv' , 'DOGEUSDTMACD5m_Candel_Graph.html')
-candel_macd.graphMACDSignal('DOGEUSDTMACD5m.csv' , 'DOGEUSDTMACD5m_MACD_Graph.png')
+#candel_macd.candelStickChart('DOGEUSDTMACD5m.csv' , 'DOGEUSDTMACD5m_Candel_Graph.html')
+#candel_macd.graphMACDSignal('DOGEUSDTMACD5m.csv' , 'DOGEUSDTMACD5m_MACD_Graph.png')
 #(4)- PLOTTING CANDELSTICK AND MACD GRAPH(NOT LIVE GRAPH, HISTORICAL DATA GRAPH ONLY)
 
 
-#liveevents.currentPriceEvent('DOGEUSDT' , '5m') # (String 'coin-conversioncurrency_name' , String 'interval_minutes')
+liveevents.currentPriceEvent('DOGEUSDT' , '5m') # (String 'coin-conversioncurrency_name' , String 'interval_minutes')
 #(5)- LIVE EVENT FOR BUY SELL TRIGGER USING KAFKA.
