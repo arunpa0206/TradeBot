@@ -4,7 +4,7 @@ import time
 import logging
 from datetime import datetime
 
-logging.basicConfig(filename='app.log', encoding='utf-8', level=logging.DEBUG) # Creating a log file.
+logging.basicConfig(filename='app.log', level=logging.DEBUG) # Creating a log file.
 
 
 def generateProperFilenames(coinname , stringtimeinterval): #returns a tuple containing 3 file-names

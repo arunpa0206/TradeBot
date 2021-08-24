@@ -5,7 +5,7 @@ from datetime import datetime
 import func_calcMACDSignalHistogram
 import pandas as pd
 
-logging.basicConfig(filename='app.log', encoding='utf-8', level=logging.DEBUG) # Creating a log file.
+logging.basicConfig(filename='app.log', level=logging.DEBUG) # Creating a log file.
 
 
 def calcMACDSignalhistogramForHisData(his_file_name):

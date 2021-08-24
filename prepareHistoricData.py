@@ -4,7 +4,7 @@ import logging
 from datetime import datetime
 
 
-logging.basicConfig(filename='app.log', encoding='utf-8', level=logging.DEBUG) # Creating a log file.
+logging.basicConfig(filename='app.log', level=logging.DEBUG) # Creating a log file.
 
 
 
