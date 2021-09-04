@@ -1,8 +1,8 @@
 ##################################################################################################################################
-(0) Create a docker network : 'docker network create advisory'.
+(0) Create a docker network : 'docker network create advisory', if it doesn;t already exists.
 
-(1) Run the command : 'docker-compose up' (Setting up the kafka-server)
-(2) Now, in a new terminal, run the command : 'docker build -t client .' (Building the image)
+(1) Run the command : 'docker-compose build' 
+
 (3) After the building is complete, run the command : 'docker run -it --network=advisory client' (Running the image)
 (4) Now wait till you enter the anaconda prompt, once in, run the command : 'python main.py' 
 (5) The code will be running with an initial message : "main.py is running" 

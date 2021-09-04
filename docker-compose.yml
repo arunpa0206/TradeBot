@@ -40,7 +40,8 @@ services:
   
   api:
     build: .
-
+    networks:
+      - advisory
 
 networks:
   advisory:
