@@ -36,7 +36,10 @@ services:
       - zookeeper
     networks:
       - advisory  
-
+  
+  
+  api:
+    build: .
 
 
 networks:

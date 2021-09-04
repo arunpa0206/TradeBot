@@ -9,7 +9,7 @@ RUN conda install -c conda-forge ta-lib
 RUN pip install -r REQUIREMENTS.txt
 
 SHELL ["conda", "run", "--name", "app", "/bin/bash", "-c"]
+CMD ["python", "main.py"]
 
-#CMD python main.py
 #ENTRYPOINT ["conda", "run", "--name", "app", "python", "main.py"]
 #ENTRYPOINT ["python3"]FROM python:3
